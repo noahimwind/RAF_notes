@@ -39,6 +39,6 @@ public class Main {
         }
         raf.seek(39745);    // man kann mit Pointer auch hinter Dateiende gehen ( setzt aber überall NUL ein )
 
-        raf.close();
+        raf.close();    // Stream muss immer geschlossen werden (Achtung: vor return)
     }
 }
